@@ -1,0 +1,77 @@
+/* Import Fonts
+------------------------------------------------------------ */
+
+@import url(http://fonts.googleapis.com/css?family=Volkhov:400,400italic);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,300,700,500,800);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+/* Font Stacks */
+.opensans {
+	font-family: "Open Sans", "Trebuchet MS", Calibri, sans-serif;
+}
+.customsansserif {
+    font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+}
+.customserif {
+    font-family: "Volkhov", "Georgia", serif;
+}
+.arial {
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.fontawesome {
+  font-family: FontAwesome;
+}
+
+
+/* Colors */
+@red: #ED1B26;
+@orange: #f90;
+@yellow: #FEF200;
+@green: #0f0;
+@blue: #00f;
+@purple: #90f;
+@beige: #c96;
+@brown: #630;
+
+/* Neutrals */
+@white: #FFF;
+@vltgrey: #E8E8E8;
+@ltgrey: #D7D7D7;
+@medgrey: #414141;
+@dkgrey: #292929;
+@black: #000;
+
+@facebook-blue: #345AA1;
+@twitter-blue: #348DB9;
+@linkedin-blue: #66B5D3;
+
+/* Buttons */
+.button(@color:@red) {
+  background-color: @color;
+	padding: 6px 24px;
+	.customsansserif;
+	color: #FFFFFF !important;
+	font-size: 12px;
+	font-weight: 700;
+  text-transform: uppercase;
+  display: table;
+  margin: 12px auto;
+}
+
+.button:hover,
+.button:visited,
+.button a,
+.button a:hover,
+.button a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+/* Clears */
+.clear {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}

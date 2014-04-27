@@ -1,0 +1,95 @@
+/*
+Footer Widgets
+---------------------------------------------------------------------------------------------------- */
+
+.footer-widgets {
+  background-color: @dkgrey;
+  color: @white;
+  border-top: 1rem solid @red;
+  clear: both;
+  padding: 0 0 16px;
+  padding: 0 0 1.6rem;
+  .wrap:after{
+    .clear;
+  }
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+  width: 33%;
+  margin-right: 3%;
+}
+
+.footer-widgets-3 {
+  width: 25%;
+}
+
+.footer-widgets-1 {
+  margin-right: 6%;
+}
+
+.footer-widgets-1,
+.footer-widgets-2 {
+  margin-top: 40px;
+  margin-top: 4rem;
+  float: left;
+}
+
+.footer-widgets-3 {
+  margin-top: 12px;
+  margin-top: 1.2rem;
+  float: right;
+}
+
+.footer-widgets a {
+  border-bottom: 1px solid #666;
+  color: #999;
+}
+
+.footer-widgets a:hover {
+  color: #ddd;
+}
+
+.footer-widgets .widget {
+  margin-bottom: 24px;
+  margin-bottom: 2.4rem;
+}
+
+.footer-widgets .widget-title {
+  color: @white;
+}
+
+.footer-widgets li {
+  list-style-type: none;
+  margin-bottom: 6px;
+  margin-bottom: 0.6rem;
+  word-wrap: break-word;
+}
+
+.footer-widgets .search-form input:focus {
+  border: 1px solid #ddd;
+}
+
+.footer-widgets-1, .footer-widgets-2{
+  .widget{
+    border-top: 2px solid @medgrey;
+    padding: 10px 24px;
+    padding: 1rem 2.4rem;
+    min-height: 150px;
+    width: 100%;
+    margin-bottom: 8px;
+    margin-bottom: 0.8rem;
+    -webkit-transition: all 500ms ease-in;
+    -moz-transition: all 500ms ease-in;
+    -ms-transition: all 500ms ease-in;
+    -o-transition: all 500ms ease-in;
+    transition: all 500ms ease-in;
+    h4.widget-title{
+      margin-bottom: 0.4rem;
+    }
+  }
+  .widget.first-child:hover{
+    border-top: 2px solid @red;
+    background-color: @medgrey;
+  }
+}
