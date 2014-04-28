@@ -11,21 +11,12 @@ function msdlab_favicon_filter( $favicon_url ) {
     return get_stylesheet_directory_uri().'/lib/img/favicon.ico';
 }
 
-add_action('genesis_before_content','msd_post_image');
+//add_action('genesis_before_content','msd_post_image');
 /**
  * Manipulate the featured image
  */
 function msd_post_image() {
-    global $post,$slideshow_metabox;
-    //first check for a slideshow
-    $slideshow_metabox->the_meta();
-    $slideshow_id = $slideshow_metabox->get_the_value('slideshow');
-    if($slideshow_id){
-        print '<section class="header-image col-md-12">';
-        print do_shortcode('[SlideDeck2 id='.$slideshow_id.']');
-        print '</section>';
-        return;
-    }
+    global $post;
     //setup thumbnail image args to be used with genesis_get_image();
     $size = 'post-image'; // Change this to whatever add_image_size you want
     $default_attr = array(

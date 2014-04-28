@@ -19,12 +19,15 @@ remove_action( 'genesis_after_header', 'genesis_do_subnav' );
 add_action( 'msdlab_pre_header', 'genesis_do_subnav' );
 add_action('msdlab_pre_header','msdlab_header_right');
 
+
+add_action('genesis_after_header','msdlab_page_banner');
+
 /*** NAV ***/
 /**
  * Move nav into header
  */
-remove_action( 'genesis_after_header', 'genesis_do_nav' );
-add_action( 'genesis_header', 'genesis_do_nav' );
+//remove_action( 'genesis_after_header', 'genesis_do_nav' );
+//add_action( 'genesis_header', 'genesis_do_nav' );
 
 /*** SIDEBARS ***/
 add_action('genesis_before', 'msdlab_ro_layout_logic'); //This ensures that the primary sidebar is always to the left.
@@ -39,7 +42,7 @@ add_action('genesis_before_content_sidebar_wrap', 'genesis_do_breadcrumbs'); //t
 remove_action( 'genesis_before_post_content', 'genesis_post_info' ); //remove the info (date, posted by,etc.)
 remove_action( 'genesis_after_post_content', 'genesis_post_meta' ); //remove the meta (filed under, tags, etc.)
 
-add_action( 'genesis_before_post', 'msdlab_post_image', 8 ); //add feature image across top of content on *pages*.
+//add_action( 'genesis_before_post', 'msdlab_post_image', 8 ); //add feature image across top of content on *pages*.
 add_filter( 'genesis_next_link_text', 'msdlab_older_link_text', 20);
 add_filter( 'genesis_prev_link_text', 'msdlab_newer_link_text', 20);
 /*** FOOTER ***/

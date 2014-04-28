@@ -120,12 +120,12 @@ Site Navigation
 --------------------------------------------- */
 
 .nav-primary {
-  display: inline-block;
-  float: right;
-  margin-top: 50px;
+  display: block;
   font-size: 14px;
-  margin-top: 5rem;
   font-size: 1.4rem;
+  background: @blue;
+  text-align: center;
+  border-top: 2px solid darken(@blue, 10%);
   ul{
     margin-bottom: 0;
     li.menu-item{
@@ -133,8 +133,8 @@ Site Navigation
         text-transform: uppercase;
         font-weight: 700;
         color: @white;
-        padding: 6px 20px;
-        padding: 0.6rem 2rem;
+        padding: 10px 12px;
+        padding: 1rem 1.2rem;
       }
       .sub-menu{
           background-color: @ltgrey;
@@ -176,7 +176,7 @@ Site Navigation
               }
             }
             li:hover{
-              background-color: @red;
+              background-color: @blue;
               a{
                 background-color: transparent;
                 border-bottom: 1px solid transparent;
@@ -186,7 +186,7 @@ Site Navigation
         }
         li:hover{
           >a:hover{
-            background-color: @red;
+            background-color: @blue;
             color: @white;
             text-decoration: none;
             }
@@ -202,8 +202,8 @@ Site Navigation
     }
     li.menu-item.home-btn, li.menu-item.cart-btn{
       a{
-        background: @red;
-        color: lighten(@red,30%);
+        background: @blue;
+        color: lighten(@blue,30%);
         border-radius: 30px;
         padding: 1rem 1.4rem;
       }

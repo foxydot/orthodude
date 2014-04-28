@@ -74,6 +74,25 @@ function msdlab_search_form($form, $search_text, $button_text, $label){
     return $form;
 }
 
+
+function msdlab_page_banner(){
+    if(is_front_page())
+        return;
+    global $post;
+    if(is_page()) {
+        $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'page_banner' );
+        $background = $featured_image[0];
+        remove_action('genesis_entry_header', 'genesis_do_post_title');
+    }
+    $title = $title != ''?sprintf( '<h3>%s</h3>', apply_filters( 'genesis_post_title_text', $title ) ):'';
+    $ret = '<section class="banner">
+        <div class="wrap" style="background-image:url('.$background.')">
+            <h1 itemprop="headline" class="entry-title">'.get_the_title().'</h1>
+        </wrap>
+       </section>';
+    print $ret;
+}
+
 /*** NAV ***/
 
 /*** SIDEBARS ***/
