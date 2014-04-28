@@ -46,6 +46,7 @@ remove_action( 'genesis_after_post_content', 'genesis_post_meta' ); //remove the
 add_filter( 'genesis_next_link_text', 'msdlab_older_link_text', 20);
 add_filter( 'genesis_prev_link_text', 'msdlab_newer_link_text', 20);
 /*** FOOTER ***/
+add_action('genesis_before_footer','msdlab_do_footer_logos_sidebar',1);
 add_theme_support( 'genesis-footer-widgets', 3 ); //adds automatic footer widgets
 
 remove_action('genesis_footer','genesis_do_footer'); //replace the footer

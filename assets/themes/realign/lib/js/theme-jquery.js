@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 </span>');
 	
 	// add target="_blank" to all *external* 
-    var internal_urls = Array('triumph.adv','triumph.msdlab3.com');
+    /*var internal_urls = Array('triumph.adv','triumph.msdlab3.com');
     $('a').attr('target',function(){
         var url = $(this).attr('href');
         var target = $(this).attr('target');
@@ -36,7 +36,7 @@ jQuery(document).ready(function($) {
             }
             return '_blank';
         }
-    });
+    });*/
 });
 function strripos(haystack, needle, offset) {
   //  discuss at: http://phpjs.org/functions/strripos/

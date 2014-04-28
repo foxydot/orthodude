@@ -6595,9 +6595,8 @@ Sidebars
 Footer Widgets
 ---------------------------------------------------------------------------------------------------- */
 .footer-widgets {
-  background-color: #292929;
+  background-color: #000000;
   color: #ffffff;
-  border-top: 1rem solid #ed1b26;
   clear: both;
   padding: 0 0 16px;
   padding: 0 0 1.6rem;
@@ -6632,11 +6631,10 @@ Footer Widgets
   float: right;
 }
 .footer-widgets a {
-  border-bottom: 1px solid #666;
-  color: #999;
+  color: #3a5f9f;
 }
 .footer-widgets a:hover {
-  color: #ddd;
+  color: #4e77be;
 }
 .footer-widgets .widget {
   margin-bottom: 24px;
@@ -6644,6 +6642,9 @@ Footer Widgets
 }
 .footer-widgets .widget-title {
   color: #ffffff;
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
 }
 .footer-widgets li {
   list-style-type: none;
@@ -6653,30 +6654,6 @@ Footer Widgets
 }
 .footer-widgets .search-form input:focus {
   border: 1px solid #ddd;
-}
-.footer-widgets-1 .widget,
-.footer-widgets-2 .widget {
-  border-top: 2px solid #414141;
-  padding: 10px 24px;
-  padding: 1rem 2.4rem;
-  min-height: 150px;
-  width: 100%;
-  margin-bottom: 8px;
-  margin-bottom: 0.8rem;
-  -webkit-transition: all 500ms ease-in;
-  -moz-transition: all 500ms ease-in;
-  -ms-transition: all 500ms ease-in;
-  -o-transition: all 500ms ease-in;
-  transition: all 500ms ease-in;
-}
-.footer-widgets-1 .widget h4.widget-title,
-.footer-widgets-2 .widget h4.widget-title {
-  margin-bottom: 0.4rem;
-}
-.footer-widgets-1 .widget.first-child:hover,
-.footer-widgets-2 .widget.first-child:hover {
-  border-top: 2px solid #ed1b26;
-  background-color: #414141;
 }
 /*
 Site Footer
@@ -6771,48 +6748,6 @@ h2.entry-subtitle {
   padding-bottom: 0.6rem;
   border-bottom: 1px dotted #d7d5c9;
 }
-.sidebar .gc-testimonial-widget {
-  padding-bottom: 0;
-  background: #3a5f9f;
-}
-.sidebar .gc-testimonial-widget #tcycle {
-  margin-bottom: 0;
-}
-.sidebar .gc-testimonial-widget .testimonial-widget {
-  border: 0;
-  background: none;
-}
-.sidebar .gc-testimonial-widget .testimonial-widget h5 {
-  display: none;
-}
-.sidebar .gc-testimonial-widget .testimonial-widget .content {
-  font-family: "Volkhov", "Georgia", serif;
-  color: #ffffff;
-  font-style: italic;
-}
-.sidebar .gc-testimonial-widget .testimonial-widget .content p.first-child:before {
-  float: left !important;
-  content: '“ ';
-  font-size: 6rem;
-  opacity: 0.5;
-  width: 24px;
-  height: 24px;
-  margin: -16px 6px 16px 0;
-  font-style: normal;
-}
-.sidebar .gc-testimonial-widget .testimonial-widget .client {
-  color: #ffffff;
-  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
-  text-transform: uppercase;
-}
-.sidebar .gc-testimonial-widget .testimonial-widget .client .name {
-  font-weight: normal;
-  font-style: normal;
-}
-.sidebar .gc-testimonial-widget .testimonial-widget,
-.sidebar .gc-testimonial-widget .testimonial-widget a {
-  padding: 20px;
-}
 .sidebar .widget_text a {
   display: inline-block;
   background: #3a5f9f;
@@ -6874,6 +6809,27 @@ h2.entry-subtitle {
 .sidebar .widget_nav_menu ul.menu li.banner.refer {
   background-image: url(../img/icon-refer.png);
 }
+.footer-logos {
+  border-top: 1px solid #d7d5c9;
+  padding: 2rem;
+}
+.footer-logos .wrap {
+  text-align: center;
+}
+.footer-logos .wrap .widget {
+  width: auto;
+  display: inline-block;
+  margin: 1.5rem;
+}
+.footer-logos .wrap .widget .widget-title {
+  display: none;
+}
+.footer-logos .wrap .widget.first-child {
+  margin-left: 0;
+}
+.footer-logos .wrap .widget.last-child {
+  margin-right: 0;
+}
 .gform_widget {
   border: 1px solid #d7d5c9;
   background-color: #f0efeb;
@@ -6910,6 +6866,14 @@ h2.entry-subtitle {
 }
 .footer-widgets .gform_widget .widget-wrap .gform_wrapper .gform_footer input[type="submit"]:hover {
   background-color: #3a5f9f;
+}
+.footer-widgets .widget_nav_menu ul.menu {
+  -moz-column-count: 2;
+  -moz-column-gap: undefinedpx;
+  -webkit-column-count: 2;
+  -webkit-column-gap: undefinedpx;
+  column-count: 2;
+  column-gap: undefinedpx;
 }
 .page-template-template-landingpage-php .entry-content .landingpage-tabs .btn-group .btn {
   width: auto;
