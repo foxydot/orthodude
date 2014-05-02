@@ -20,8 +20,10 @@ if ( !defined('ABSPATH') )
 <br clear="all" />
 
 <div id="<?php echo $this->get_field_id('fields'); ?>" <?php if ( empty($instance['attachment_id']) && empty($instance['imageurl']) ) { ?>style="display:none;"<?php } ?>>
-	<p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'image_widget'); ?>:</label>
-		<input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr(strip_tags($instance['title'])); ?>" /></p>
+    <p><label for="<?php echo $this->get_field_id('title'); ?>"><?php _e('Title', 'image_widget'); ?>:</label>
+        <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo esc_attr(strip_tags($instance['title'])); ?>" /></p>
+    <p><label for="<?php echo $this->get_field_id('subtitle'); ?>"><?php _e('Subtitle', 'image_widget'); ?>:</label>
+        <input class="widefat" id="<?php echo $this->get_field_id('subtitle'); ?>" name="<?php echo $this->get_field_name('subtitle'); ?>" type="text" value="<?php echo esc_attr(strip_tags($instance['subtitle'])); ?>" /></p>
 
 	<p><label for="<?php echo $this->get_field_id('alt'); ?>"><?php _e('Alternate Text', 'image_widget'); ?>:</label>
 		<input class="widefat" id="<?php echo $this->get_field_id('alt'); ?>" name="<?php echo $this->get_field_name('alt'); ?>" type="text" value="<?php echo esc_attr(strip_tags($instance['alt'])); ?>" /></p>
@@ -35,6 +37,9 @@ if ( !defined('ABSPATH') )
 		<option value="_self"<?php selected( $instance['linktarget'], '_self' ); ?>><?php _e('Stay in Window', 'image_widget'); ?></option>
 		<option value="_blank"<?php selected( $instance['linktarget'], '_blank' ); ?>><?php _e('Open New Window', 'image_widget'); ?></option>
 	</select></p>
+
+    <p><label for="<?php echo $this->get_field_id('linktext'); ?>"><?php _e('Link Text', 'image_widget'); ?>:</label>
+    <input class="widefat" id="<?php echo $this->get_field_id('linktext'); ?>" name="<?php echo $this->get_field_name('linktext'); ?>" type="text" value="<?php echo esc_attr(strip_tags($instance['linktext'])); ?>" /><br />
 
 
 	<?php

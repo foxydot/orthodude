@@ -4,7 +4,7 @@ Plugin Name: MSD Image Widget (MSDLAB EDIT. PREPARE PATCH BEFORE UPDATING.)
 Plugin URI: http://wordpress.org/extend/plugins/image-widget/
 Description: A simple image widget that uses the native WordPress media manager to add image widgets to your site.
 Author: Modern Tribe, Inc.
-Version: 4.0.7
+Version: 4.0.8
 Author URI: http://tri.be
 */
 
@@ -23,7 +23,7 @@ add_action('widgets_init', 'tribe_load_image_widget');
  **/
 class Tribe_Image_Widget extends WP_Widget {
 
-	const VERSION = '4.0.6';
+	const VERSION = '4.0.8';
 
 	const CUSTOM_IMAGE_SIZE_SLUG = 'tribe_image_widget_custom';
 
@@ -87,13 +87,16 @@ class Tribe_Image_Widget extends WP_Widget {
 		$instance = wp_parse_args( (array) $instance, self::get_defaults() );
 		if ( !empty( $instance['imageurl'] ) || !empty( $instance['attachment_id'] ) ) {
 
-			$instance['title'] = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'] );
+            $instance['title'] = apply_filters( 'widget_title', empty( $instance['title'] ) ? '' : $instance['title'] );
+            $instance['subtitle'] = apply_filters( 'widget_title', empty( $instance['subtitle'] ) ? '' : $instance['subtitle'] );
 			$instance['description'] = apply_filters( 'widget_text', $instance['description'], $args, $instance );
 			$instance['link'] = apply_filters( 'image_widget_image_link', esc_url( $instance['link'] ), $args, $instance );
 			$instance['linktarget'] = apply_filters( 'image_widget_image_link_target', esc_attr( $instance['linktarget'] ), $args, $instance );
 			$instance['linktext'] = apply_filters( 'image_widget_image_link_text', esc_attr( $instance['linktext'] ), $args, $instance );
 			$instance['width'] = apply_filters( 'image_widget_image_width', abs( $instance['width'] ), $args, $instance );
 			$instance['height'] = apply_filters( 'image_widget_image_height', abs( $instance['height'] ), $args, $instance );
+			$instance['maxwidth'] = apply_filters( 'image_widget_image_maxwidth', esc_attr( $instance['maxwidth'] ), $args, $instance );
+			$instance['maxheight'] = apply_filters( 'image_widget_image_maxheight', esc_attr( $instance['maxheight'] ), $args, $instance );
 			$instance['align'] = apply_filters( 'image_widget_image_align', esc_attr( $instance['align'] ), $args, $instance );
 			$instance['alt'] = apply_filters( 'image_widget_image_alt', esc_attr( $instance['alt'] ), $args, $instance );
 
@@ -122,7 +125,8 @@ class Tribe_Image_Widget extends WP_Widget {
 	function update( $new_instance, $old_instance ) {
 		$instance = $old_instance;
 		$new_instance = wp_parse_args( (array) $new_instance, self::get_defaults() );
-		$instance['title'] = strip_tags($new_instance['title']);
+        $instance['title'] = strip_tags($new_instance['title']);
+        $instance['subtitle'] = strip_tags($new_instance['subtitle']);
 		if ( current_user_can('unfiltered_html') ) {
 			$instance['description'] = $new_instance['description'];
 		} else {
@@ -207,13 +211,16 @@ class Tribe_Image_Widget extends WP_Widget {
 	private static function get_defaults() {
 
 		$defaults = array(
-			'title' => '',
+            'title' => '',
+            'subtitle' => '',
 			'description' => '',
 			'link' => '',
 			'linktarget' => '',
 			'linktext' => '',
 			'width' => 0,
 			'height' => 0,
+			'maxwidth' => '100%',
+			'maxheight' => '',
 			'image' => 0, // reverse compatible - now attachement_id
 			'imageurl' => '', // reverse compatible.
 			'align' => 'none',
@@ -284,11 +291,11 @@ class Tribe_Image_Widget extends WP_Widget {
 			$attr['class'] = 'attachment-'.$size;
 		}
 		$attr['style'] = '';
-		if (!empty($instance['width'])) {
-			$attr['style'] .= "max-width: {$instance['width']}px;";
+		if (!empty($instance['maxwidth'])) {
+			$attr['style'] .= "max-width: {$instance['maxwidth']};";
 		}
-		if (!empty($instance['height'])) {
-			$attr['style'] .= "max-height: {$instance['height']}px;";
+		if (!empty($instance['maxheight'])) {
+			$attr['style'] .= "max-height: {$instance['maxheight']};";
 		}
 		if (!empty($instance['align']) && $instance['align'] != 'none') {
 			$attr['class'] .= " align{$instance['align']}";
