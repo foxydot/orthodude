@@ -23,103 +23,18 @@
   }
 }
 #homepage-widgets{
-  margin-bottom: 30px;
-  .widget{
-    
-      p{margin: 0;}
-    .widget-wrap{
-      height: 100%;
-      background-repeat: no-repeat;
-      background-position: top center;
-      .bw{
-        display: block;
-        min-height: 455px;
-        overflow: hidden;
-        position: relative;
-        background-repeat: no-repeat;
-        background-position: top center;
-        .widget-text{
-          position: absolute;
-          bottom: 0;
-          max-height: 46px;
-          background-color: @medgrey;
-          color: @white;
-          padding: 1rem;
-          -webkit-transition: max-height 500ms ease-in;
-          -moz-transition: max-height 500ms ease-in;
-          -ms-transition: max-height 500ms ease-in;
-          -o-transition: max-height 500ms ease-in;
-          transition: max-height 500ms ease-in;
-          .widget-title{
-            font-weight: 700;
-            text-transform: none;
-            font-size: 2.1rem;
-          }
-          .widget-content{
-            a{
-              display: inline-block;
-              background: @blue;
-              border: 1px solid @white;
-              color: @white;
-              padding: 0.4rem 1.6rem;
-              text-transform: uppercase;
-              font-weight: 700;
-            }
-            a:hover{
-              background: @medgrey;
-              text-decoration: none;
-            }
-          }
-        }
-       }
-      .widget-text:hover{
-        max-height: 455px;
-        background-color: @blue;
-      }
-    }
+  h4.widget-title{
+    color: lighten(@medgrey, 20%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    margin-top: 1.6rem;
+    margin-bottom: 0;
   }
-  .widget.map{
-    margin-top: 2rem;
-    .widget-wrap{
-       background: @medgrey; 
-       .map-content, .map-image{
-         margin: 1.5rem 0;
-         color: @white; 
-          h3{
-            strong{
-              color: @blue;
-            }
-          }
-          a{
-            display: inline-block;
-            background: @blue;
-            border: 1px solid @white;
-            color: @white;
-            padding: 0.4rem 1.6rem;
-            text-transform: uppercase;
-            font-weight: 700;
-          }
-          a:hover{
-            background: @medgrey;
-            text-decoration: none;
-          }
-       }
-       .map-image{
-         svg{
-           .state{
-             fill: @ltgrey;
-             stroke: @dkgrey;
-             stroke-width: 2px;
-           }
-           .state:hover{
-             fill: @white;
-             stroke: @blue;
-             z-index: 900;
-           }
-         }
-       }
+  h5{
+    color: @blue;
+    font-size: 1.8rem;
     }
-  }
 }
 
 /***MEDIA QUERIES***/

@@ -14,8 +14,7 @@ echo '<div class="widget-content">';
 echo $this->get_image_html( $instance, true );
 
 if ( !empty( $title ) ) { echo $before_title . $title . $after_title; }
-
-if ( !empty( $subtitle ) ) { echo $before_subtitle . $subtitle . $after_subtitle; }
+if ( !empty( $subtitle ) ) { echo '<h5>' . $subtitle . '</h5>'; }
 if ( !empty( $description ) ) {
 	echo '<div class="'.$this->widget_options['classname'].'-description" >';
 	echo wpautop( $description );

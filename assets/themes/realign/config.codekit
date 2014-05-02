@@ -1573,6 +1573,39 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/lib\/img\/icon-refer.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3160,
+		"inputAbbreviatedPath": "\/lib\/img\/icon-refer.png",
+		"outputAbbreviatedPath": "\/lib\/img\/icon-refer.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/lib\/img\/icon-schedule.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2327,
+		"inputAbbreviatedPath": "\/lib\/img\/icon-schedule.png",
+		"outputAbbreviatedPath": "\/lib\/img\/icon-schedule.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/lib\/img\/icon-tour.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3241,
+		"inputAbbreviatedPath": "\/lib\/img\/icon-tour.png",
+		"outputAbbreviatedPath": "\/lib\/img\/icon-tour.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/lib\/img\/logo.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -2432,8 +2465,8 @@
 	},
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
-	"displayValue": "huzzah",
-	"displayValueWasSetByUser": 0,
+	"displayValue": "realign",
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "globe_blue"
 	},
 "projectSettings": {
