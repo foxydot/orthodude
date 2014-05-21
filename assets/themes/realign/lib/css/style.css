@@ -5985,6 +5985,8 @@ Widgets
 --------------------------------------------- */
 .featured-content p.entry-meta {
   margin: 1rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .featured-content p.entry-meta i {
   margin-right: 1rem;
