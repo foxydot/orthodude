@@ -6764,16 +6764,30 @@ h2.entry-subtitle {
   background: #414141;
   text-decoration: none;
 }
-.sidebar .widget_nav_menu ul.menu li:not(.banner) {
+.sidebar .widget_advanced_menu {
+  margin-bottom: 0;
+}
+.sidebar .widget_advanced_menu .menu > li {
+  display: none;
+}
+.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor a {
+  color: #3a5f9f;
+}
+.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor li {
   list-style: none outside none;
+  font-size: 1.6rem;
+  font-weight: 300;
   margin-bottom: .25em;
   margin-left: 0.25em;
   text-indent: -0.25em;
 }
-.sidebar .widget_nav_menu ul.menu li:not(.banner) a {
-  color: #3a5f9f;
-}
-.sidebar .widget_nav_menu ul.menu li:not(.banner):before {
+.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor li:before {
   font-family: 'FontAwesome';
   content: '\f0DA';
   margin: 0 0.5rem 0 0;
