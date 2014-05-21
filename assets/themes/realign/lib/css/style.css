@@ -6935,6 +6935,9 @@ h2.entry-subtitle {
   font-weight: 700;
   width: auto;
 }
+.button-wrapper {
+  display: inline-block;
+}
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
