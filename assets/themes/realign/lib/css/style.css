@@ -5568,8 +5568,8 @@ body {
   background-color: #ffffff;
   color: #666;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  font-size: 1.6rem;
+  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 300;
   line-height: 1.625;
 }
@@ -5992,8 +5992,8 @@ Widgets
 }
 .featured-content .entry-title {
   border: none;
-  font-size: 24px;
-  font-size: 2.4rem;
+  font-size: 18px;
+  font-size: 1.8rem;
   line-height: 1.2;
 }
 .featured-content .entry-title a {
