@@ -6778,16 +6778,19 @@ h2.entry-subtitle {
 .sidebar .widget_advanced_menu .menu > li {
   display: none;
 }
-.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor {
+.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor,
+.sidebar .widget_advanced_menu .menu li.current-menu-item {
   display: block;
   font-size: 1.8rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor a {
+.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor a,
+.sidebar .widget_advanced_menu .menu li.current-menu-item a {
   color: #3a5f9f;
 }
-.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor li {
+.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor li,
+.sidebar .widget_advanced_menu .menu li.current-menu-item li {
   list-style: none outside none;
   font-size: 1.6rem;
   font-weight: 300;
@@ -6795,7 +6798,8 @@ h2.entry-subtitle {
   margin-left: 0.25em;
   text-indent: -0.25em;
 }
-.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor li:before {
+.sidebar .widget_advanced_menu .menu > li.current-menu-ancestor li:before,
+.sidebar .widget_advanced_menu .menu li.current-menu-item li:before {
   font-family: 'FontAwesome';
   content: '\f0DA';
   margin: 0 0.5rem 0 0;
