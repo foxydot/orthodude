@@ -6939,6 +6939,13 @@ h2.entry-subtitle {
   font-weight: 700;
   width: auto;
 }
+.entry-content ul.nav-tabs {
+  margin: 0;
+}
+.tab-content {
+  background: #e3eaf5;
+  padding: 1rem;
+}
 .button-wrapper {
   display: inline-block;
 }
