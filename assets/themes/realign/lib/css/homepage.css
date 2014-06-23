@@ -30,6 +30,17 @@
   color: white;
   text-decoration: none;
 }
+.btn.btn-default {
+  background-color: #3a5f9f;
+  padding: 6px 24px;
+  font-family: "Raleway", "Trebuchet MS", Calibri, sans-serif;
+  color: #FFFFFF !important;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: inline;
+  margin: 12px auto;
+}
 /* Clears */
 .clear {
   content: ".";
