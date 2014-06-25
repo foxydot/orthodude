@@ -6973,6 +6973,10 @@ h2.entry-subtitle {
 .button-wrapper {
   display: inline-block;
 }
+.entry-content .qa-faqs h3.qa-faq-title {
+  text-transform: none;
+  margin-bottom: 0.6rem;
+}
 /*
 Media Queries
 ---------------------------------------------------------------------------------------------------- */
