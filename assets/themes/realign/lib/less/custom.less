@@ -245,7 +245,48 @@
     }
   }
 }
+
   .widget_nav_menu{
+    ul.menu{
+      li.banner{
+        font-weight: 700;
+        background-image: none;
+        background-position: center left;
+        background-repeeat: no-repeat;
+        background-size: auto;
+        a{
+          line-height: 1;
+          display: block;
+          padding: 1.2rem 1.5rem;
+          width: 100%;
+        }
+      }
+      li.banner.blue{
+        background-color: @blue;
+        .fa-facebook:before{
+          height: 30px;
+          width: 30px;
+          text-align: center;
+          border: 1px solid @white;
+          display: inline-block;
+          line-height: 2;
+          margin-right: 0.6rem;
+        }
+        a{
+          padding: 0.2rem 1.5rem;
+          color: @white;
+        }
+      }
+      li.banner.grey{
+        background-color: @ltgrey;
+        text-align: center;
+        a{
+          color: @dkgrey;
+        }
+      }
+    }
+  }
+  .widget_nav_menu.two_columns{
     ul.menu{
       -moz-column-count: 2;
       -moz-column-gap: undefinedpx;

@@ -6659,8 +6659,8 @@ Footer Widgets
   float: left;
 }
 .footer-widgets-3 {
-  margin-top: 12px;
-  margin-top: 1.2rem;
+  margin-top: 40px;
+  margin-top: 4rem;
   float: right;
 }
 .footer-widgets a {
@@ -6921,7 +6921,43 @@ h2.entry-subtitle {
 .footer-widgets .gform_widget .widget-wrap .gform_wrapper .gform_footer input[type="submit"]:hover {
   background-color: #3a5f9f;
 }
-.footer-widgets .widget_nav_menu ul.menu {
+.footer-widgets .widget_nav_menu ul.menu li.banner {
+  font-weight: 700;
+  background-image: none;
+  background-position: center left;
+  background-repeeat: no-repeat;
+  background-size: auto;
+}
+.footer-widgets .widget_nav_menu ul.menu li.banner a {
+  line-height: 1;
+  display: block;
+  padding: 1.2rem 1.5rem;
+  width: 100%;
+}
+.footer-widgets .widget_nav_menu ul.menu li.banner.blue {
+  background-color: #3a5f9f;
+}
+.footer-widgets .widget_nav_menu ul.menu li.banner.blue .fa-facebook:before {
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  border: 1px solid #ffffff;
+  display: inline-block;
+  line-height: 2;
+  margin-right: 0.6rem;
+}
+.footer-widgets .widget_nav_menu ul.menu li.banner.blue a {
+  padding: 0.2rem 1.5rem;
+  color: #ffffff;
+}
+.footer-widgets .widget_nav_menu ul.menu li.banner.grey {
+  background-color: #d7d5c9;
+  text-align: center;
+}
+.footer-widgets .widget_nav_menu ul.menu li.banner.grey a {
+  color: #292929;
+}
+.footer-widgets .widget_nav_menu.two_columns ul.menu {
   -moz-column-count: 2;
   -moz-column-gap: undefinedpx;
   -webkit-column-count: 2;
