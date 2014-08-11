@@ -47,6 +47,7 @@ function msdlab_header_right(){
         ) );
     }
 }
+
  /**
  * Customize search form input
  */
@@ -97,6 +98,11 @@ function msdlab_page_banner(){
 
 /*** SIDEBARS ***/
 function msdlab_add_extra_theme_sidebars(){
+    genesis_register_sidebar(array(
+    'name' => 'Pre-header',
+    'description' => 'Widgets above the header',
+    'id' => 'pre-header'
+            ));
     genesis_register_sidebar(array(
     'name' => 'Blog Sidebar',
     'description' => 'Widgets on the Blog Pages',
