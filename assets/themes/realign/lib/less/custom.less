@@ -22,17 +22,89 @@
      }
      .header-widget-area{
        margin: 0 1rem;
-       width: 240px;
        display: block;
        vertical-align: 0.8rem;
+         .msd-connected{
+          .widget-wrap{
+            position: relative;
+            .connected-form{
+              display: inline-block;
+              position: relative;
+              top: -1rem;
+              .form-trigger{
+                background: none repeat scroll 0 0 @blue;
+                color: @white;
+                cursor: pointer;
+                width: 240px;
+                font-size: 1.4rem;
+                margin: 0;
+                line-height: 2.1;
+                text-align: center;
+                text-transform: uppercase;
+              }
+              .gform_wrapper,.gform_confirmation_wrapper{
+                background: lighten(@blue, 40%);
+                padding: 0 1rem;
+                width: 240px;
+                display: block;
+                position: absolute;
+                z-index: 400;
+                margin: 0;
+                form,.gform_confirmation_message{
+                   font-size: 1.2rem;
+                    margin-top: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    transition: max-height 2s ease 0s;
+                    input, textarea{
+                      color: @white;
+                      background: lighten(@blue, 30%);
+                      border: 1px solid lighten(@blue, 10%);
+                      padding: 0.6rem;
+                    }
+                    ::-webkit-input-placeholder {
+                   color: @white;
+                    }
+                    
+                    :-moz-placeholder { /* Firefox 18- */
+                       color: @white;  
+                    }
+                    
+                    ::-moz-placeholder {  /* Firefox 19+ */
+                       color: @white;  
+                    }
+                    
+                    :-ms-input-placeholder {  
+                       color: @white;  
+                    }
+                    input[type="submit"],input[type="button"],a.button{
+                      background: @blue;
+                      border: 0;
+                      font-weight: 700;
+                    }
+                    input[type="submit"]:hover,input[type="button"]:hover,a.button:hover{
+                      background: darken(@blue,5%);
+                    }
+                }
+                .gform_confirmation_message{
+                  color: @white;
+                  line-height: 1.2;
+                }
+              }
+              .gform_wrapper.open_form, .gform_confirmation_wrapper.open_form{
+                 form,.gform_confirmation_message{
+                   height: auto;
+                   max-height: 1000px;
+                 }
+               }
+             }
+             .connected-social{
+               display: inline-block;
+               
+             }
+          }
+       }
      }
-     .phone{
-       display: inline-block;
-       color: @blue;
-       font-weight: 700;
-       font-size: 1.4rem;
-       vertical-align: 1rem;
-     }  
      .search-form{
       display: inline-block;
       padding: 1rem 0 1rem 1rem;

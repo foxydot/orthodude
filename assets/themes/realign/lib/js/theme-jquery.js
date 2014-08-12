@@ -37,6 +37,16 @@ jQuery(document).ready(function($) {
             return '_blank';
         }
     });*/
+   
+       
+    var formwrapper = $('.header-widget-area .gform_wrapper,.header-widget-area .gform_confirmation_wrapper');
+    $('.header-widget-area .connected-form .form-trigger').click(function(){
+        if(!formwrapper.hasClass('open_form')){
+            formwrapper.addClass('open_form');
+        } else {
+            formwrapper.removeClass('open_form');
+        }
+    });       
 });
 function strripos(haystack, needle, offset) {
   //  discuss at: http://phpjs.org/functions/strripos/

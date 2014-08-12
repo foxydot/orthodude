@@ -1,12 +1,19 @@
 @white: #FFFFFF;
-@facebook-blue: #345AA1;
-@twitter-blue: #348DB9;
-@linkedin-blue: #66B5D3;
-@rss-orange: #F37D2A;
-@google-black: #000000;
-@flickr-blue: #0062DD;
-@youtube-red: #CC181E;
-@sharethis-green: #00BF00;
+@facebook: #345AA1;
+@twitter: #348DB9;
+@pinterest: #EC1A22;
+@google: #000000;
+@linkedin: #66B5D3;
+@instagram: #EC1A22;
+@tumblr: #3E5A70;
+@reddit: #FF4400;
+@flickr: #0062DD;
+@youtube: #CC181E;
+@vimeo: #232021;
+@vine: #00BE8F;
+@sharethis: #00BF00;
+@contact: #999999;
+@rss: #F37D2A;
 
  .social-media{
    position: relative;
@@ -18,47 +25,65 @@
      color: @white;
      display: block;
      float: left;
-     font-size: 2rem;
+     font-size: 1.4rem;
      text-align: center;
-     width: 30px;
-     padding: 0.5rem 0;
+     width: 2em;
+     height: 2em;
+     padding: 0;
      text-decoration: none;
      text-indent: 0;
      margin:0;
-     i.fa{
-      color: @white;
-      width: 2em;
-      height: 2em;
-      text-align: center;
-      line-height: 2em;
-      }
-      span{
-        text-indent: -9999px;
-        display: none;
-        }
+     line-height: 2em;
    }
-   a.tw{
-     background-color:@twitter-blue;
+   a:before{
+     opacity: 0.5;
    }
-   a.fb{
-     background-color:@facebook-blue;
+   a:hover:before{
+     opacity: 1;
    }
-   a.li{
-     background-color:@linkedin-blue;
+   a.fa-facebook{
+     background-color:@facebook;
    }
-   a.rss{
-     background-color:@rss-orange;
+   a.fa-twitter{
+     background-color:@twitter;
    }
-   a.gl{
-     background-color:@google-black;
+   a.fa-pinterest{
+     background-color:@pinterest;
    }
-   a.fl{
-     background-color:@flickr-blue;
+   a.fa-google-plus{
+     background-color:@google;
    }
-   a.yt{
-     background-color:@youtube-red;
+   a.fa-linkedin{
+     background-color:@linkedin;
    }
-   a.st{
-     background-color:@sharethis-green;
+   a.fa-instagram{
+     background-color:@instagram;
+   }
+   a.fa-tumblr{
+     background-color:@tumblr;
+   }
+   a.fa-reddit{
+     background-color:@reddit;
+   }
+   a.fa-flickr{
+     background-color:@flickr;
+   }
+   a.fa-youtube{
+     background-color:@youtube;
+   }
+   a.fa-vimeo-square{
+     background-color:@vimeo;
+   }
+   a.fa-vine{
+     background-color:@vine;
+   }
+   a.fa-share-alt{
+     background-color:@sharethis;
+   }
+   a.fa-envelope{
+     background-color:@contact;
+   }
+   a.fa-rss{
+     background-color:@rss;
    }
  }  
