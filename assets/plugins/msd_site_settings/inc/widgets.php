@@ -27,7 +27,7 @@ class MSDConnected extends WP_Widget {
             $form = RGFormsModel::get_form($form_id);
             print '<div class="connected-form">';
             print '<h4 class="form-trigger">'.$form->title.'</h4>';
-            print do_shortcode('[gravityform id="'.$form_id.'" title="false" description="false" ajax="false"]');
+            print do_shortcode('[gravityform id="'.$form_id.'" title="false" description="false" ajax="false" tabindex=1000]');
             print '</div>';
         }
         if ( $address ){
