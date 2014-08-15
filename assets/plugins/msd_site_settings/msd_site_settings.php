@@ -59,11 +59,11 @@ class MSDSocial{
 
 //contact information
 function get_bizname(){
-    $ret = '<div itemtype="http://schema.org/LocalBusiness">';
+    $ret = '<span itemtype="http://schema.org/LocalBusiness">';
     $ret .= '<span itemprop="name" class="msdsocial_biz_name">';
 	$ret .= (get_option('msdsocial_biz_name')!='')?get_option('msdsocial_biz_name'):get_bloginfo('name');
     $ret .= '</span>';
-    $ret .= '</div>';
+    $ret .= '</span>';
 	return $ret;
 }
 function get_address(){
